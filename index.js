@@ -10,13 +10,14 @@ const memStorage = {
 };
 
 app.post('/auth/login', function(req, res) {
-    if (memStorage.users.findIndex(element => element.username == req.body.username && element.password == req.body.password) != -1)
+    const id = memStorage.users.findIndex(element => element.username == req.body.username && element.password == req.body.password);
+    if (id != -1)
     {
-        res.status(200).json({success: true, username: req.body.username, id: memStorage.users.length-1});
+        res.status(200).json({success: true, username: req.body.username, id: id});
     }
     else
     {
-        res.status(300).json({success: false, username: undefined, id: undefined, err: "Incorrect username or password."});
+        res.status(401).json({success: false, username: undefined, id: undefined, err: "Incorrect username or password."});
     }
 });
 
@@ -28,7 +29,7 @@ app.post('/auth/register', function(req, res) {
     }
     else
     {
-        res.status(300).json({success: false, username: undefined, id: undefined, err: "Username already exists."});
+        res.status(401).json({success: false, username: undefined, id: undefined, err: "Username already exists."});
     }
 });
 
