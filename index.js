@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 1337;
+const logger = require('morgan');
+app.use(logger('dev'));
 app.use(express.json());
 
 const memStorage = {
