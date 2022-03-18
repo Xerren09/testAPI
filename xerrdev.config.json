@@ -7,7 +7,7 @@
         "npm run start"
     ],
     "hostTarget": {
-        "path": "./404.html",
-        "server": ""
+        "path": "",
+        "server": "http://localhost:1337/"
     }
 }
