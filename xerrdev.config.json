@@ -1,0 +1,13 @@
+{
+    "events" : [
+        "push"
+    ],
+    "run": [
+        "npm install",
+        "npm run start"
+    ],
+    "hostTarget": {
+        "path": "./404.html",
+        "server": ""
+    }
+}
