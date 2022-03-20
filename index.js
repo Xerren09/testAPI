@@ -33,4 +33,8 @@ app.post('/auth/register', function(req, res) {
     }
 });
 
+app.get('/test', function(req, res) {
+    res.status(200).json({success: true, message: "It works!", code: 200});
+});
+
 app.listen(port, () => console.log(`Application listening on port ${port}.`));
