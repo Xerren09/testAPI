@@ -5,9 +5,5 @@
     "run": [
         "npm install"
     ],
-	"main": "npm run start",
-    "hostTarget": {
-        "path": "",
-        "server": "http://localhost:1337/"
-    }
+	"main": "npm run start"
 }
