@@ -5,5 +5,5 @@
     "run": [
         "npm install"
     ],
-	"main": "npm run start"
+    "main": "npm run start"
 }
