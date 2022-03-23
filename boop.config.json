@@ -1,0 +1,9 @@
+{
+    "events" : [
+        "push"
+    ],
+    "run": [
+        "npm install"
+    ],
+    "main": "npm run start"
+}
