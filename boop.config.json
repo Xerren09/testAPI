@@ -1,6 +1,6 @@
 {
     "branch" : "main",
-    "run": [
+    "build": [
         "npm install"
     ],
     "run": "npm run start"
