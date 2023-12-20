@@ -1,0 +1,8 @@
+{
+    "type": "service",
+    "branch" : "main",
+    "build": [
+        "npm ci"
+    ],
+    "start": "npm run start"
+}

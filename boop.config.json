@@ -1,7 +1,0 @@
-{
-    "branch" : "main",
-    "build": [
-        "npm install"
-    ],
-    "run": "npm run start"
-}
