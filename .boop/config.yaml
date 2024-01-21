@@ -5,5 +5,5 @@ build:
   - npm install
 deploy:
   env:
-    port: 7777
+    PORT: 7777
   entry: npm run start
